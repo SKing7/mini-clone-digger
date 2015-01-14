@@ -1,5 +1,6 @@
 #mini-clone-digger 
 使用 字符串相似度算法（编辑距离算法 Levenshtein Distance）来计算检查文本的相似度，来近似计算重复度
+使用示例：
 ````
   1 var task = require('../lib/task');
   3 var instance = task('/your/path');
@@ -12,6 +13,7 @@
  10     console.log(rate);
  11 });
 ````
+输出结果:
 ````
 [ [ 1, 0.9258698940998487, 0.4193548387096774 ],
   [ 0.9258698940998487, 1, 0.3933434190620272 ],
