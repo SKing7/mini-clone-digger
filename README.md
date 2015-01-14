@@ -1,5 +1,5 @@
 #mini-clone-digger 
-使用 字符串相似度算法（编辑距离算法 Levenshtein Distance）来计算检查文本的相似度，来近似计算重复度
+使用字符串相似度算法（编辑距离算法 Minimum Edit Distance）来计算检查文本的相似度，来近似计算重复度
 
 使用示例：
 ````
