@@ -3,16 +3,15 @@
 
 使用示例：
 ````
-  1 var task = require('../lib/task');
-  3 var instance = task('/your/path');
-  4
-  5 instance.main([//对比的文件数组列表
-  6     'navigation/navigation_index_content_bus_walk.html',
-  7     'navigation/navigation_index_content_car.html',
-  8     'navigation/navigation_index_content.html',
-  9 ], function (rate) {
- 10     console.log(rate);
- 11 });
+  var task = require('../lib/task');
+  var instance = task('/your/path');
+  instance.main([//对比的文件数组列表
+     'navigation/navigation_index_content_bus_walk.html',
+      'navigation/navigation_index_content_car.html',
+      'navigation/navigation_index_content.html',
+ ], function (rate) {
+     console.log(rate);
+  });
 ````
 输出结果:
 ````
