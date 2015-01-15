@@ -38,9 +38,12 @@ recursive(basePath + '/' + module, function (err, files) {
         keys = ['模板:' + module].concat(keys);
 
         var data = [keys].concat(rate);
+        //删除空行
         removeEmptyRow(data);
+        //删除空列
         data = row2col(data);
         removeEmptyRow(data);
+        data = row2col(data);
         data = _.compact(data);
         out.csv(data, module, 'build');
     });
@@ -70,6 +73,6 @@ recursive(basePath + '/' + module, function (err, files) {
                 rt[k1].push(v1);
             });
         });
-        return data
+        return rt
     }
 });
