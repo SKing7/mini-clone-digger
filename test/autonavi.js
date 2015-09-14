@@ -6,7 +6,7 @@ var recursive = require('recursive-readdir');
 var async = require('async');
 var instance = task(argv.p);
 
-var module = argv.m || 'chuxing';
+var module = argv.m || 'order';
 var basePath = argv.p;
 recursive(basePath + '/' + module, function (err, files) {
 
